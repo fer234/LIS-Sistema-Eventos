@@ -1,0 +1,116 @@
+/*Footer*/
+
+
+
+
+
+.hd{
+
+  margin: 0px;
+height: 15px;
+background-color: #66bb6a;
+}
+.hdpage{
+
+  margin: 0px;
+height: 50px;
+background-color: #66bb6a;
+   
+ 
+}
+
+
+.logo {
+  max-width: 150px;
+  margin: 15px;
+  position: relative;
+  height: auto;
+  z-index: 1;
+  }
+  .logo2{
+
+ max-width: 150px;
+  margin: 0px;
+  position: relative;
+  height: relative;
+  z-index: 1;
+
+  
+}
+.tipografia{
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  font-style: italic;
+}
+/*Elena*/
+.barra1{
+  background-color: white;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  position: relative;
+}
+.espacio{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.colorbarra2{
+color: white;
+  text-shadow: grey 0.1em 0.1em 0.2em;
+  font-family: 'Indie Flower', cursive;
+  font-style: bold;
+  text-align: center;
+}
+
+.colorbarra3{
+color: black;
+  text-shadow: grey 0.1em 0.1em 0.2em;
+  font-family: 'Indie Flower', cursive;
+  font-style: bold;
+  text-align: justify;
+}
+
+.colorcontainer{
+  background-color: white;
+  padding: 50px;
+}
+
+.barra2{
+  background-color:#66bb6a;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  position: relative;
+}
+.fbook{
+  padding: 20px;
+  background-color: white;
+  z-index: 5;
+}
+.contfondo{
+  background-image: url("../img/menuyfooter/1.jpg");
+}
+
+.tipografiaA{
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  font-style: italic;
+}
+
+
+div.nav-wrapper{
+
+background-color: #1b5e20;
+
+}
+
+.hotel1{
+  text-align: justify;
+}
+.testi{
+  padding: 50px;
+}
+
+/*Prueba*/
+
