@@ -8,7 +8,7 @@ include("../master/navbar.php");
 <title> Inicio | 2021 </title>
 </head>
 <body>
-<!-- Cartas de materialize bonitas -->
+<!-- Contenido de la pagina -->
 <div class="row">
 <div class="col s12 l6">
 <h5 class="black-text textosindex center-align">Bienvenidos a Grand Event</h5>
@@ -39,7 +39,7 @@ include("../master/navbar.php");
 <img class="responsive-img valign-wrapper hide-on-med-and-down" src="img/eje3.jpg">
 </div>
 </div>
-<!-- fin de la carta -->
+<!-- fin del contenido de la pagina -->
 <?php
 include("../master/footer.php");
 ?>

@@ -8,10 +8,12 @@ include("../master/navbar.php");
 <title> Reservas | 2021 </title>
 </head>
 <body>
+<!-- Contenido de la pagina -->
+
+<!-- Fin del contenido de la pagina -->
 <?php
 include("../master/footer.php");
 ?>
-
 <?php
 include("../master/scripts.php");
 ?>

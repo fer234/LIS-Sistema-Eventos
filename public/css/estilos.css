@@ -22,34 +22,6 @@ body {
     text-align: justify;
     padding: 30px;
 }
-
-
-section#habitacion{
-    position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
-	background-color: #00796b;
-	background-size: cover;
-	background-position: center 0px;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-section#hotel{
-    position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
-	background-color: #69f0ae;
-	background-size: cover;
-	background-position: center 0px;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
 /*Prueba*/
 *{
   box-sizing:border-box;
