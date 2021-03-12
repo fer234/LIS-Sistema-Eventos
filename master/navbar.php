@@ -13,7 +13,6 @@ include("scripts.php")
             <li><a class="tipografia waves-effect waves-light" href="reserva.php">Reservar</a></li>
             <li><a class="tipografia waves-effect waves-light" href="equipo.php">Nuestro Equipo</a></li>
             <li><a class="tipografia waves-effect waves-light" href="galeria.php">Galeria</a></li>
-            <li><a class="tipografia waves-effect waves-light tooltipped" data-position='bottom' data-delay='50' data-tooltip='Consulta' href='consulta.php'><i class='material-icons'>help_outline</i></a></li>
           </ul>
         </div>
       </nav>
@@ -25,6 +24,5 @@ include("scripts.php")
     <li><a class="center-align waves-effect waves-light" href="equipo.php">Nuestro Equipo</a></li>
     <li><a class="center-align waves-effect waves-light" href="galeria.php">Galeria</a></li>
     <li><a class="center-align waves-effect waves-light" href="reserva.php">Reservar</a></li>
-    <li><a class="waves-effect waves-light" href='consulta.php'><i class='rigth-align material-icons'>help_outline</i>Salir</a></li>
 </ul>
 
