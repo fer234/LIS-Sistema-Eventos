@@ -13,12 +13,18 @@ include("../master/navbar.php");
 </head>
 <body>
 <!-- Contenido de la pagina -->
-<h3 class="center-align">Galeria</h3>
+<div class="black white-text center">
+<div class="Container">
+<div class="section">
+<h3 >Galeria</h3>
+<h3 class="textosindex center-align">Tipos de Decoración y Salónes:</h3>
+</div>
+</div>
+</div>
+<hr>
 <!-- seccion de bodas-->
 <div class="section">
-<h3 class="textosindex center-align">Tipos de Decoración y Salónes:</h3>
-<hr>
-<h3   class=" textosindex center-align ">BODAS</h3>
+<h3 class="black blue-text textosindex center-align ">BODAS</h3>
 <div class="row">
 <!--agregando imagen circular de los novios utilizando la clase circle-resposive-img-->
 <div class="col s8 offset-s2 l2 offset-l5 z-depth-5">
@@ -46,7 +52,7 @@ include("../master/navbar.php");
 <!--card-image es para agregar la imagen-->
 <div class="card-image ">
 <!-- la clase activator sirve para conectar el card-reveal y mostrar la informacion desplegadola hacia arriba al tocar la imagen-->
-<img  class="responsive-img" src="img/galeria_img/eje7.jpg" alt="imagen"  class="activator" >
+<img  class="responsive-img " src="img/galeria_img/eje7.jpg" alt="imagen"class="activator" >
 <!-- aqui se crea el boton add y con activator se activa tambien para desplegar mas informacion-->
 <a class="btn-floating pulse activator halfway-fab  red btn-large">
 <!-- la clase material-icons es para agregar iconos por defecto de materialize-->
@@ -80,7 +86,7 @@ include("../master/navbar.php");
 <div class="col s12 l4 ">
 <div class="card hoverable  blue-grey lighten-3">
 <div class="card-image ">
-<img class="responsive-img" src="img/galeria_img/eje8.jpg" alt="imagen"class="activator">
+<img class="responsive-img"  src="img/galeria_img/eje8.jpg" alt="imagen"class="activator">
 <a class="btn-floating pulse activator halfway-fab  red btn-large">
 <i class="material-icons">add</i>
 </a>
@@ -132,10 +138,12 @@ include("../master/navbar.php");
 </div>
 </div>
 </div>
+</div>
+</div>
 <hr>
 <!-- seccion para 15 años-->
 <div class="section">
-<h3 class=" textosindex center-align">XV AÑOS</h3>
+<h3 class="black pink-text textosindex center-align">XV AÑOS</h3>
 <div class="row">
 <div class="col s8 offset-s2 l2 offset-l5 z-depth-5">
               <img src="img/galeria_img/eje15.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->      
@@ -242,7 +250,7 @@ include("../master/navbar.php");
 <hr>
 <!--Graduaciones-->
 <div class="section">
-<h3 class=" textosindex center-align">GRADUACIÓN</h3>
+<h3 class="black yellow-text textosindex center-align">GRADUACIÓN</h3>
 <div class="row">
 <div class="col s8 offset-s2 l2 offset-l5 z-depth-5">
               <img src="img/galeria_img/eje14.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->      
