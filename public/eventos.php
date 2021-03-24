@@ -4,7 +4,7 @@ include("../master/navbar.php");
 ?>
 <html>
 <head>
-<meta charset="utf-8"/><!-- tipo de escritura para que acepte caracteres especiales -->
+<meta charset="utf-8"/>
 <title> Eventos | 2021 </title>
 </head>
 <body>
@@ -43,7 +43,7 @@ include("../master/navbar.php");
 <span class="card-title blue-text " >Área de Jardines<i class="material-icons right">close</i></span>
 <h6><b>Descripción:</b></h6>
 <p> Esta area con ambiente de naturaleza y elegancia dedicado a celebraciones de area abierta con luces que hacen ver hermosos detalles en su decoración de noche, dedicado para eventos de novios.</p>
-<p class="blue-text">Posibles montajes:</p>
+<p class="black-text">Posibles montajes:</p>
 <p>Cena: 150 invitados</p>
 <p>Auditorio: 200 invitados</p>
 <br>
@@ -66,7 +66,7 @@ include("../master/navbar.php");
 <span class="card-title blue-text " >Salón Elegant <i class="material-icons right">close</i></span>
 <h6><b>Descripción:</b></h6>
 <p> Este espacio es un salón muy moderno con mucho toque de elegancia especial y dedicado para fiestas de bodas modernas.</p>
-<p class="blue-text">Posibles montajes:</p>
+<p class="black-text">Posibles montajes:</p>
 <p>Cena: 250 invitados</p>
 <p>Auditorio: 300 invitados</p>
 <br>
@@ -88,7 +88,7 @@ include("../master/navbar.php");
 <span class="card-title blue-text " >Jardín Principal<i class="material-icons right">close</i></span>
 <h6><b>Descripción:</b></h6>
 <p> Está area rodeada de nuestros bellos jardines con bellas flores, con amplio espacio para un mayor numero de invitados, con un ambiente agradable disfrutando de unos bellos paisajes especiales para sus fotografias y mucha diversión en familia.</p>
-<p class="blue-text">Posibles montajes:</p>
+<p class="black-text">Posibles montajes:</p>
 <p>Cena: 450 invitados</p>
 <p>Auditorio: 500 invitados</p>
 <br>

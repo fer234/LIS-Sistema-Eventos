@@ -115,8 +115,10 @@ class Page
 				<div class='container'>
 					<div class='row'>
 						<div class='col s12 m6'>
-							<h5 class='white-text'>Gread Event</h5>
-							<a class='white-text' href='www.outlook.com'><i class='material-icons left'>email</i>Ayuda</a>
+							<h5 class='white-text'>Dashboard</h5>
+							<p class='grey-text text-lighten-4'>Dirección: Final 43 Avenida Sur Casa 6 y 7 B Reparto San Luis San Salvador, El Salvador </P>
+							<p class='grey-text text-lighten-4'>Tel.: 2225-8483 </p>
+							<p class='grey-text text-lighten-4'>grandevent@gmail.com</p>
 						</div>
 						<div class='col s12 m6'>
 							<h5 class='white-text'>Enlaces</h5>
@@ -124,10 +126,9 @@ class Page
 						</div>
 					</div>
 				</div>
-				<div class='footer-copyright'>
+				<div class='footer-copyright grey darken-4'>
 					<div class='container'>
-						<span>©".date(' Y ')."Gread Event, todos los derechos reservados.</span>
-						<span class='white-text right'>Diseñado con <a class='red-text text-accent-1' href='http://materializecss.com/' target='_blank'><b>Materialize</b></a></span>
+						Copyright © 2021 Grand Event
 					</div>
 				</div>
 			</footer>

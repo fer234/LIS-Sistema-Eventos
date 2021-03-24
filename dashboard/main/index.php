@@ -1,6 +1,6 @@
 <?php
 require("../lib/page.php");
-Page::header("El tiempo de hoy es");
+Page::header("El clima de hoy");
 ?>
 <br>
 <!--Mostramos el cli,a-->

@@ -1,7 +1,7 @@
 <?php
 // mandamos a llamar el menu y ponemos un encabezado
 require("../lib/page.php");
-Page::header("Iniciar sesión");
+Page::header("Grand Event");
 // Verificamos que existan usuarips de lo contrario nos enviara al login
 $sql = "SELECT * FROM usuarios"; // consulta para verificar los registros
 $data = Database::getRows($sql, null); // obtenemos todos los registros ingresados
