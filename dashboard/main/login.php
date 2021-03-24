@@ -61,7 +61,7 @@ if(!empty($_POST))
 }
 ?>
 <!-- Este el formulario del inicio de sesion -->
-<form method='post'>
+<form method='post' autocomplete='off'>
 	<div class='row'>
 		<div class='input-field col s12 m6 offset-m3'>
 			<i class='material-icons prefix'>person_pin</i>
@@ -75,7 +75,7 @@ if(!empty($_POST))
 		</div>
 	</div>
 	<div class='row center-align'>
-		<button type='submit' class='btn waves-effect'><i class='material-icons'>send</i></button>
+		<button type='submit' class='btn waves-effect red'>Iniciar sesión</button>
 	</div>
 </form>
 

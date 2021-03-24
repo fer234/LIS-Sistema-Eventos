@@ -20,13 +20,13 @@ include("../master/navbar.php");
 <div class="slider">
 <ul class="slides">
 <li>
-<img src=img/si.jpg> 
+<img src=img/s7.jpg> 
 </li>
 <li>
-<img src=img/eje2.jpg> 
+<img src=img/s9.jpg> 
 </li>
 <li>
-<img src=img/eje3.jpg> 
+<img src=img/s8.jpg> 
 </li>
 </div>
 

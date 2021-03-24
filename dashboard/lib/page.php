@@ -36,13 +36,13 @@ class Page
 				<header class='navbar-fixed'>
 					<nav class='black'>
 						<div class='nav-wrapper'>
-							<a href='../main/' class='brand-logo'><i class='material-icons left hide-on-med-and-down'>dashboard</i></a>
+							<a href='../main/' class='brand-logo'><img class='logo' height='70' width='70'  src='../../public/img/grandevent.png'></a>
 							<a href='#' data-activates='mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
 							<ul class='right hide-on-med-and-down'>
-								<li><a href='../reservation/'><i class='material-icons left'>dvr</i>Reservaciones</a></li>
-								<li><a href='../event/'><i class='material-icons left'>event</i>Eventos</a></li>
-								<li><a href='../type/'><i class='material-icons left'>event_note</i>Tipos de eventos</a></li>
-								<li><a href='../users/'><i class='material-icons left'>group</i>Usuarios</a></li>
+								<li><a href='../reservation/'><i class='material-icons left'></i>Reservaciones</a></li>
+								<li><a href='../event/'><i class='material-icons left'></i>Eventos</a></li>
+								<li><a href='../type/'><i class='material-icons left'></i>Tipos de eventos</a></li>
+								<li><a href='../users/'><i class='material-icons left'></i>Usuarios</a></li>
 								<li><a class='dropdown-button' href='#' data-activates='dropdown'><i class='material-icons left'>verified_user</i>".$_SESSION['nombre_usuario']."</a></li>
 							</ul>
 							<ul id='dropdown' class='dropdown-content'>
@@ -53,10 +53,10 @@ class Page
 					</nav>
 				</header>
 				<ul class='side-nav' id='mobile'>
-					<li><a href='../reservation/'><i class='material-icons left'>dvr</i>Reservaciones</a></li>
-					<li><a href='../event/'><i class='material-icons left'>event</i>Eventos</a></li>
-					<li><a href='../type/'><i class='material-icons left'>event_note</i>Tipos de eventos</a></li>
-					<li><a href='../users/'><i class='material-icons'>group</i>Usuarios</a></li>
+					<li><a href='../reservation/'><i class='material-icons left'></i>Reservaciones</a></li>
+					<li><a href='../event/'><i class='material-icons left'></i>Eventos</a></li>
+					<li><a href='../type/'><i class='material-icons left'></i>Tipos de eventos</a></li>
+					<li><a href='../users/'><i class='material-icons'></i>Usuarios</a></li>
 					<li><a class='dropdown-button' href='#' data-activates='dropdown-mobile'><i class='material-icons'>verified_user</i>".$_SESSION['nombre_usuario']."</a></li>
 				</ul>
 				<ul id='dropdown-mobile' class='dropdown-content'>
@@ -75,7 +75,7 @@ class Page
 				<header class='navbar-fixed'>
 					<nav class='black'>
 						<div class='nav-wrapper'>
-							<a href='../main/' class='brand-logo'><i class='material-icons'>dashboard</i></a>
+							<a href='../main/' class='brand-logo'><img class='logo' height='70' width='70'  src='../../public/img/grandevent.png'></a>
 						</div>
 					</nav>
 				</header>

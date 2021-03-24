@@ -123,8 +123,8 @@ else
         </div>
     </div>
     <div class='row center-align'>
-        <a href='../main/index.php' class='btn waves-effect grey'><i class='material-icons'>cancel</i></a>
-        <button type='submit' class='btn waves-effect blue'><i class='material-icons'>save</i></button>
+        <a href='../main/index.php' class='btn waves-effect red'>Cancelar</a>
+        <button type='submit' class='btn waves-effect blue'>Guardar</button>
     </div>
 </form>
 
