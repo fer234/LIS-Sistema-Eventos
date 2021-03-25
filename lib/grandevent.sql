@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `grandevent`
 --
-
+CREATE DATABASE IF NOT EXISTS `grandevent` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `grandevent`;
 -- --------------------------------------------------------
 
 --
