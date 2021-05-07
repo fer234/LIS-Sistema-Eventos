@@ -3,7 +3,7 @@ require("../lib/page.php");
 Page::header("El clima de hoy");
 ?>
 <br>
-<!--Mostramos el cli,a-->
+<!--Mostramos el clima-->
 <div class="row">
 <div class="col s4">
 <a target="_blank" href="https://hotelmix.es/weather/san-salvador-5390"><img src="https://w.bookcdn.com/weather/picture/32_5390_1_4_17bc9c_250_13a085_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=95085"  alt="booked.net"/></a>
