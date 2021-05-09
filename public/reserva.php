@@ -41,7 +41,7 @@ else
 {
 $id = $_GET['id'];
 // con esto obtenemos los datos
-$sql = "SELECT * FROM reserva WHERE id_reserva = ?";
+$sql = "SELECT * FROM re WHERE id = ?";
 $params = array($id);
 // obtenemos los registros
 $data = Database::getRow($sql, $params);
@@ -85,7 +85,7 @@ if($telefono !="")
 if($evento !="")
 {
 // ejecutamos la consulta
-$sql = "INSERT INTO reserva(nombre, apellido, dui, correo, evento, telefono, fecha) VALUES(?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO re(nombre, apellido, dui, correo, evento, telefono, fecha) VALUES(?, ?, ?, ?, ?, ?, ?)";
 $params = array($nombre, $apellido, $dui, $correo, $evento, $telefono, $fecha);
 Page::showMessage(1, "Operación satisfactoria", "index.php");
 }
@@ -116,7 +116,7 @@ throw new Exception("Debe ingresar un alias");
 else
 {
 // si el id ya existe, entonces sera un update
-$sql = "UPDATE reserva SET nombre = ?, apellido = ?, dui = ?, correo = ?, evento = ?, telefono = ?, fecha = ? WHERE id_reserva = ?";
+$sql = "UPDATE re SET nombre = ?, apellido = ?, dui = ?, correo = ?, evento = ?, telefono = ?, fecha = ? WHERE id_reserva = ?";
 $params = array($nombre, $apellido, $dui, $correo, $evento, $telefono, $fecha, $id);
 }
 //ejecutamos la consulta aql
