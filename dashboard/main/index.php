@@ -2,6 +2,10 @@
 require("../lib/page.php");
 Page::header("El clima de hoy");
 ?>
+<!-- Se manda a llamar las librerias para que funcionen los gráficos -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
 <br>
 <!--Mostramos el clima-->
 <div class="row">
@@ -9,12 +13,69 @@ Page::header("El clima de hoy");
 <a target="_blank" href="https://hotelmix.es/weather/san-salvador-5390"><img src="https://w.bookcdn.com/weather/picture/32_5390_1_4_17bc9c_250_13a085_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=95085"  alt="booked.net"/></a>
 </div>
 <div class="col s4">
-<a target="_blank" href="https://hotelmix.es/weather/la-libertad-45466"><img src="https://w.bookcdn.com/weather/picture/32_45466_1_4_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=95085"  alt="booked.net"/></a><
+<a target="_blank" href="https://hotelmix.es/weather/la-libertad-45466"><img src="https://w.bookcdn.com/weather/picture/32_45466_1_4_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=95085"  alt="booked.net"/></a>
 </div>
 <div class="col s4">
 <a target="_blank" href="https://hotelmix.es/weather/santa-tecla-115280"><img src="https://w.bookcdn.com/weather/picture/32_115280_1_4_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=95085"  alt="booked.net"/></a>
 </div>
 </div>
+<br>
+<br>
+<!--Graficos-->
+<div class="col s12 m12 l6" id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>
+<?php
+// Consulta para ver todas las reservas que se han hecho
+$query = "SELECT fecha, COUNT(id) FROM re GROUP BY fecha";
+$pa = null;
+$data = Database::getRows($query, $pa);
+?>
+<script type="text/javascript">
+// Grafico lineal
+Highcharts.chart('container', {
+chart: {
+type: 'line'
+},
+title: {
+text: 'Reservas totales'
+},
+subtitle: {
+text: 'De todos los usuarios'
+},
+xAxis: {
+categories: [
+<?php
+foreach($data as $row){
+print("'".$row[0]."',");
+}
+?>
+]
+},
+yAxis: {
+title: {
+text: ' Escala'
+}
+},
+plotOptions: {
+line: {
+dataLabels: {
+enabled: true
+},
+enableMouseTracking: false
+}
+},
+series: [{
+name: 'Fechas',
+data: [
+<?php
+foreach($data as $row){
+print("".$row[1].",");
+}
+?>
+]
+}]
+});
+</script>
 <br>
 <!--Mapa de google-->
 <div class="container">

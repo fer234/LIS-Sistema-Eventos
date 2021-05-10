@@ -88,7 +88,7 @@ class Page
 			$filename = basename($_SERVER['PHP_SELF']);
 			// Como nos encontramos en el else significa que no hemos iniciado sesion, por lo tanto
 			// no tenemos permiso de entrar a ninguna ruta del sitio publico que no sea el login o el register
-			if($filename != "login.php" && $filename != "register.php")
+			if($filename != "login.php" && $filename != "register.php" && $filename != "contra.php")
 			{
 				// si se intenta ingresar de esta manera, nos aparecera este mensaje de error y nos mantendra 
 				// en el login, jamas entraremos a otro lugar que no sea el login o el register

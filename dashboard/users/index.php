@@ -36,6 +36,8 @@ if($data != null)
 		</div>
 		<div class='input-field col s12 m4'>
 			<a href='save.php' class='btn waves-effect indigo'>Nuevo registro</a>
+			<br><br>
+			<a href='reporteUsuario.php' class='btn waves-effect red'>Generar Reporte</a>
 		</div>
 	</div>
 </form>

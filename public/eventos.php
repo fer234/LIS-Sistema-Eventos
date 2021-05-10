@@ -16,7 +16,6 @@ include("../master/navbar.php");
 </div>
 </div>
 </div>
-
 <!-- seccion de bodas-->
 <div class="section">
 <h3 class="white blue-text textosindex center-align ">BODAS</h3>
@@ -92,6 +91,7 @@ print("<div class='card-panel yellow'><i class='material-icons left'>warning</i>
 }
 ?>
 </div>
+</div>
 <hr>
 <!--Graduaciones-->
 <div class="section">
@@ -127,6 +127,7 @@ else
 print("<div class='card-panel yellow'><i class='material-icons left'>warning</i>No hay registros disponibles en este momento.</div>");
 }
 ?>
+</div>
 </div>
 <!-- Fin del contenido de la pagina -->
 <?php

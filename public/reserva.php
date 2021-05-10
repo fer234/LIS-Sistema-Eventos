@@ -91,6 +91,7 @@ include("../master/navbar.php");
 </div>
 </div>
 <?php
+require("lib/page.php");
 if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['dui']) && isset($_POST['correo']) && isset($_POST['evento']) && isset($_POST['telefono']) && isset($_POST['fecha'])){
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
@@ -101,20 +102,21 @@ $telefono = $_POST['telefono'];
 $fecha = $_POST['fecha'];
 $fields = array('nombre' => $nombre, 'apellido' => $apellido, 'dui' => $dui, 'correo' => $correo, 'evento' => $evento, 'telefono' => $telefono, 'fecha' => $fecha);
 $payload = json_encode($fields);
-// Prepare new cURL resource
+// Preparando un nuevo recurso cURL
 $ch = curl_init('http://localhost/grandeventapi/public/reserva');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLINFO_HEADER_OUT, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-// Set HTTP Header for POST request 
+// Establecemos un encabezado HTTP para la solicitud POST
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'Content-Type: application/json',
 'Content-Length: ' . strlen($payload))
 );
-// Submit the POST request
+// Enviamos la solicitud post
 $result = curl_exec($ch);
-// Close cURL session handle
+Page::showMessage(1, "Tu reserva a sido enviada", "index.php");
+// Cerranos la session cURL
 curl_close($ch);
 }
 ?>

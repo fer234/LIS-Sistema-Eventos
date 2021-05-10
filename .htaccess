@@ -1,0 +1,13 @@
+#Sirve para ocultar los directorios cuando se da el error 403
+Options All -Indexes
+ErrorDocument 401 http://localhost/LIS-Sistema-Eventos/errores/401.html
+ErrorDocument 403 http://localhost/LIS-Sistema-Eventos/errores/403.html
+ErrorDocument 404 http://localhost/LIS-Sistema-Eventos/errores/404.html
+ErrorDocument 500 http://localhost/LIS-Sistema-Eventos/errores/500.html
+
+#La primera linea activa el motor de redirecciones.
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://localhost/LIS-Sistema-Eventos [NC]
+
+

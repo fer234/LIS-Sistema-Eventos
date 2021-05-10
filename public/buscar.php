@@ -40,9 +40,11 @@ include("../master/navbar.php");
 <legend>Resultado de la busqueda</legend>
 <br><br>
 <?php
+require("lib/page.php");
 if (isset($_GET['id']) && $_GET['id']!="") {
 $id = $_GET['id'];
 $url = "http://localhost/grandeventapi/public/reserva/".$id;
+try {
 $client = curl_init($url);
 curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
 $response = curl_exec($client);
@@ -73,6 +75,9 @@ echo "<td>$result->fecha</td>";
 echo "</tr>";
 echo "</tbody>";
 echo "</table>";
+} catch (Exception $error) {
+Page::showMessage(2, $error->getMessage(), null);
+}
 }
 ?>
 </div>

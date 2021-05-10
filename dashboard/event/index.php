@@ -30,6 +30,8 @@ if($data != null)
 		</div>
 		<div class='input-field col s12 m4'>
 			<a href='save.php' class='btn waves-effect indigo'>Nuevo registro</a>
+			<br><br>
+			<a href='reportesEventos.php' class='btn waves-effect red'>Generar Reporte</a>
 		</div>
 	</div>
 </form>
@@ -83,5 +85,6 @@ else
 {
 	Page::showMessage(4, "No hay registros disponibles", "save.php");
 }
+
 Page::footer();
 ?>

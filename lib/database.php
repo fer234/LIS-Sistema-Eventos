@@ -81,5 +81,14 @@ class Database
         // FETCH_BOTH nos ayuda a devolver los que necesitamos
         return $statement->fetchAll(PDO::FETCH_BOTH);
     }
+
+    public static function getRowsNum($query, $values)
+    {
+        self::connect();
+        $statement = self::$connection->prepare($query);
+        $statement->execute($values);
+        self::desconnect();
+        return $statement->fetchAll(PDO::FETCH_NUM);
+    }
 }
 ?>
