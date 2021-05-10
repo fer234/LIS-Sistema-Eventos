@@ -5,7 +5,7 @@ include("../master/navbar.php");
 <html>
 <head>
 <meta charset="utf-8"/><!-- tipo de escritura para que acepte caracteres especiales -->
-<title> Reservas | 2021 </title>
+<title> Busqueda | 2021 </title>
 </head>
 <body>
 <!-- Contenido de la pagina -->
@@ -22,7 +22,7 @@ include("../master/navbar.php");
 <form action="" method="GET">
 <div class='row'>
 <div class='input-field col s12 m11'>
-<i class='material-icons prefix'>person</i>
+<i class='material-icons prefix'>event_available</i>
 <input id='id' type='text' name='id' class='validate' required/>
 <label for='id'>Ingresa tu codigo</label>
 </div>
@@ -43,13 +43,10 @@ include("../master/navbar.php");
 if (isset($_GET['id']) && $_GET['id']!="") {
 $id = $_GET['id'];
 $url = "http://localhost/grandeventapi/public/reserva/".$id;
-
 $client = curl_init($url);
 curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
 $response = curl_exec($client);
-
 $result = json_decode($response);
-
 echo "<table class='table'>";
 echo "<thead>";
 echo "<tr>";

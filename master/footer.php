@@ -16,6 +16,7 @@
 <li><a class="center-align grey-text text-lighten-3" href="galeria.php">Galeria</a></li>
 <li><a class="center-align grey-text text-lighten-3" href="eventos.php">Eventos</a></li>
 <li><a class="center-align grey-text text-lighten-3" href="reserva.php">Reservaciones</a></li>
+<li><a class="center-align grey-text text-lighten-3" href="buscar.php">Buscar tu Reserva</a></li>
 <br>
 <li>
 <a href="https://www.facebook.com" target="_blank"><img src="../img/menuyfooter/facebook.png"></a>

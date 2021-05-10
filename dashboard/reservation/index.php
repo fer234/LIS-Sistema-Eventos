@@ -8,13 +8,13 @@ if(!empty($_POST))
 	// recibimos el parametro y lo colocamos en la consulta
 	// si hay resutados se mostraran
 	$search = trim($_POST['buscar']);
-	$sql = "SELECT * FROM reserva WHERE apellido LIKE ? OR nombre LIKE ? ORDER BY apellido";
+	$sql = "SELECT * FROM re WHERE apellido LIKE ? OR nombre LIKE ? ORDER BY apellido";
 	$params = array("%$search%", "%$search%");
 }
 else
 {
 	// si no hay resultado simplemente nos mostrara los registros con normlaidad
-	$sql = "SELECT * FROM reserva ORDER BY apellido";
+	$sql = "SELECT * FROM re ORDER BY apellido";
 	$params = null;
 }
 // obtenemos los datos de la base
@@ -67,8 +67,8 @@ if($data != null)
 				<td>".$row['telefono']."</td>
 				<td>".$row['fecha']."</td>
 				<td>
-					<a href='save.php?id=".$row['id_reserva']."' class='blue-text'><i class='material-icons'>edit</i></a>
-					<a href='delete.php?id=".$row['id_reserva']."' class='red-text'><i class='material-icons'>delete</i></a>
+					<a href='save.php?id=".$row['id']."' class='blue-text'><i class='material-icons'>edit</i></a>
+					<a href='delete.php?id=".$row['id']."' class='red-text'><i class='material-icons'>delete</i></a>
 				</td>
 			</tr>
 		");

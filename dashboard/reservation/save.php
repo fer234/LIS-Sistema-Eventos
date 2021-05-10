@@ -23,7 +23,7 @@ else
     Page::header("Modificar reserva");
     $id = $_GET['id'];
     // con esto obtenemos los datos
-    $sql = "SELECT * FROM reserva WHERE id_reserva = ?";
+    $sql = "SELECT * FROM re WHERE id = ?";
     $params = array($id);
     // obtenemos los registros
     $data = Database::getRow($sql, $params);
@@ -67,7 +67,7 @@ if(!empty($_POST))
                                 if($evento !="")
                                 {
                                     // ejecutamos la consulta
-                                    $sql = "INSERT INTO reserva(nombre, apellido, dui, correo, evento, telefono, fecha) VALUES(?, ?, ?, ?, ?, ?, ?)";
+                                    $sql = "INSERT INTO re(nombre, apellido, dui, correo, evento, telefono, fecha) VALUES(?, ?, ?, ?, ?, ?, ?)";
                                     $params = array($nombre, $apellido, $dui, $correo, $evento, $telefono, $fecha);
                                     Page::showMessage(1, "Operación satisfactoria", "index.php");
                                 }
@@ -92,13 +92,13 @@ if(!empty($_POST))
                     else
                     {
                         // mensaje de error
-                        throw new Exception("Debe ingresar un alias");
+                        throw new Exception("Debe ingresar tu DUI");
                     }
                 }
                 else
                 {
                     // si el id ya existe, entonces sera un update
-                    $sql = "UPDATE reserva SET nombre = ?, apellido = ?, dui = ?, correo = ?, evento = ?, telefono = ?, fecha = ? WHERE id_reserva = ?";
+                    $sql = "UPDATE re SET nombre = ?, apellido = ?, dui = ?, correo = ?, evento = ?, telefono = ?, fecha = ? WHERE id = ?";
                     $params = array($nombre, $apellido, $dui, $correo, $evento, $telefono, $fecha, $id);
                 }
                 //ejecutamos la consulta aql
@@ -154,10 +154,24 @@ if(!empty($_POST))
     </div>
     <div class='row'>
         <div class='input-field col s12 m13'>
-            <?php
-            $sql = "SELECT id_evento, nombre_evento FROM evento";
-            Page::setCombo("evento", "evento", $evento, $sql);
-            ?>
+        <select name="evento">
+        <optgroup label="BODA">
+            <option value="Boda Normal">Boda Normal</option>
+            <option value="Boda Beach">Boda Beach</option>
+            <option value="Boda Deluxe">Boda Deluxe</option>
+        </optgroup>
+        <optgroup label="XV AÑOS">
+            <option value="XV Normal">XV Normal</option>
+            <option value="XV Deluxe">XV Deluxe</option>
+            <option value="My XV">My XV</option>
+        </optgroup>
+        <optgroup label="GRADUACIÓN">
+            <option value="Graduacion Normal">Graduacion Normal</option>
+            <option value="Graduacion Deluxe">Graduacion Deluxe</option>
+            <option value="Last party">Last party</option>
+        </optgroup>
+        </select>
+        <label>Selecciona tu evento</label>
         </div>
     </div>
     <div class='row'>

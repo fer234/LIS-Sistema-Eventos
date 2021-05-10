@@ -16,7 +16,7 @@ if(!empty($_POST))
 	$id = $_POST['id'];
 	try 
 	{
-		$sql = "DELETE FROM reserva WHERE id_reserva = ?";
+		$sql = "DELETE FROM re WHERE id = ?";
 	    $params = array($id);
 	    Database::executeRow($sql, $params);
 	    Page::showMessage(1, "Operación satisfactoria", "index.php");
