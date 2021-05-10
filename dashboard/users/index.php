@@ -35,9 +35,8 @@ if($data != null)
 			<button type='submit' class='btn waves-effect green'><i class='material-icons'>check_circle</i></button> 	
 		</div>
 		<div class='input-field col s12 m4'>
-			<a href='save.php' class='btn waves-effect indigo'>Nuevo registro</a>
-			<br><br>
-			<a href='reporteUsuario.php' class='btn waves-effect red'>Generar Reporte</a>
+			<a href='save.php' class='btn waves-effect btn-small indigo'><i class='material-icons'>add_box</i></a>
+			<a href='reporteUsuario.php' class='btn waves-effect btn-small red'><i class='material-icons'>print</i></a>
 		</div>
 	</div>
 </form>

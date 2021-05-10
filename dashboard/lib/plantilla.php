@@ -11,7 +11,7 @@ class PDF extends FPDF
     {
         //obtenemos la fecha
         $registro = date("Y-m-d");
-        $this->Image('../img/grandevent.png' , 11 ,15, 60 , 13,'PNG');
+        $this->Image('../img/grandevent.png' , 15 ,15, 65 , 25,'PNG');
         $this->SetFont('Arial','B',15);
         $this->Cell(70);
         $this->Cell(120,7, 'GRAND EVENT', 0, 0, 'L');
@@ -24,10 +24,10 @@ class PDF extends FPDF
         $this->Cell(120, 7, utf8_decode('Tel.: 2225-8483'), 0, 0, 'L');
         $this->ln(4);
         $this->Cell(70);
-        $this->Cell(120, 7, utf8_decode('reservaciones@hoteleltorogoz.com'), 0, 0, 'L');
+        $this->Cell(120, 7, utf8_decode('grandevent@gmail.com'), 0, 0, 'L');
         $this->ln(4);
         $this->Cell(70);
-        $this->Cell(120, 7, utf8_decode('Dirección: Final 35 Avenida Norte Casa 6 y 7 B Reparto '), 0, 0, 'L');
+        $this->Cell(120, 7, utf8_decode('Dirección: Final 43 Avenida Sur Casa 6 y 7 B Reparto San Luis '), 0, 0, 'L');
         $this->ln(4);
         $this->Cell(70);
         $this->Cell(120, 7, utf8_decode('Fecha: '.$registro), 0, 0, 'L');
@@ -48,7 +48,7 @@ class PDF extends FPDF
         $this->SetFont('Arial','I',8);
         // Número de página
         $this->SetTextColor(3, 3, 3);
-        $this->Cell(0,10,'Page'.$this->PageNo().'',0,0,'C');
+        $this->Cell(0,10,'Pagina'.$this->PageNo().'',0,0,'C');
         $this->ln(5);
         $this->Cell(0, 10, 'San Salvador, El Salvador: '.strftime("%A %d de %B del %Y"), 0, 0, 'C');
     }

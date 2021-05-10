@@ -25,7 +25,7 @@ if(isset($_SESSION['nombre_usuario']))
     $pdf->SetFillColor(3, 3, 3);
     $pdf->SetFont('Arial', '', 11);
     $pdf->SetTextColor(253, 254, 254);
-    $pdf->ln(1);
+    $pdf->ln(8);
 
     foreach($data as $row)
     {
@@ -33,7 +33,7 @@ if(isset($_SESSION['nombre_usuario']))
         $pdf->Cell(50, 8, utf8_decode($row['nombre']), 0, 0, 'C', 1);
         $pdf->Cell(50, 8, utf8_decode($row['apellido']), 0, 0, 'C', 1);
         $pdf->Cell(50, 8, utf8_decode($row['evento']), 0, 0, 'C', 1); 
-        $pdf->ln(1);
+        $pdf->ln(8);
     }
     $pdf->Output();
 
