@@ -19,7 +19,6 @@ include("../master/navbar.php");
 <!-- seccion de bodas-->
 <div class="section">
 <h3 class="white blue-text textosindex center-align ">BODAS</h3>
-<br>
 <!--Galeria de imagenes de bodas-->
 <!-- tarjeta 1-->
 <div class="row">
@@ -59,7 +58,6 @@ print("<div class='card-panel yellow'><i class='material-icons left'>warning</i>
 <!-- seccion para 15 años-->
 <div class="section">
 <h3 class="white pink-text textosindex center-align">XV AÑOS</h3>
-<br>
 <div class="row">
 <?php
 $sql2 = "SELECT * FROM evento, tipo_eventos WHERE evento.id_tipo = tipo_eventos.id_tipo AND estado = 1 AND nombre_tipo LIKE '%XV%'";
@@ -96,7 +94,6 @@ print("<div class='card-panel yellow'><i class='material-icons left'>warning</i>
 <!--Graduaciones-->
 <div class="section">
 <h3 class="white green-text textosindex center-align">GRADUACIÓN</h3>
-<br>
 <div class="row">
 <?php
 $sql3 = "SELECT * FROM evento, tipo_eventos WHERE evento.id_tipo = tipo_eventos.id_tipo AND estado = 1 AND nombre_tipo LIKE '%Graduaciones%'";

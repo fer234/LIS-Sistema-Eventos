@@ -36,6 +36,18 @@ if(!empty($_POST))
 					// si es correcta lo dejeamos pasar al dashboard y tomamos una sesion
 			    	$_SESSION['id_usuario'] = $data['id_usuario'];
 			      	$_SESSION['nombre_usuario'] = $data['nombres']." ".$data['apellidos'];
+					if(!empty($_POST["remember"])){
+						setcookie ("member_login",$alias,time()+ (10 * 365 * 24 * 60 * 60));  
+						setcookie ("member_password",$clave,time()+ (10 * 365 * 24 * 60 * 60));
+					}
+					else{
+						if(isset($_COOKIE["member_login"])){
+							setcookie ("member_login",""); 
+						}
+						if(isset($_COOKIE["member_password"])){
+							setcookie ("member_password",""); 
+						}
+					}
 			      	header("location: index.php");
 				}
 				else // si la clave es incorecta nos aparece este mensaje
@@ -61,17 +73,21 @@ if(!empty($_POST))
 }
 ?>
 <!-- Este el formulario del inicio de sesion -->
-<form method='post' autocomplete='off'>
+<form method='post' autocomplete='on'>
 	<div class='row'>
 		<div class='input-field col s12 m6 offset-m3'>
 			<i class='material-icons prefix'>person_pin</i>
-			<input autocomplete="off"  id='alias' type='text' name='alias' class='validate' required/>
+			<input autocomplete="off"  id='alias' type='text' name='alias' class='validate' value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>" required/>
 	    	<label for='alias'>Usuario</label>
 		</div>
 		<div class='input-field col s12 m6 offset-m3'>
 			<i class='material-icons prefix'>security</i>
-			<input autocomplete="off"  id='clave' type='password' name='clave' class="validate" required/>
+			<input autocomplete="off"  id='clave' type='password' name='clave' class="validate" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>" required/>
 			<label for='clave'>Contraseña</label>
+		</div>
+		<div class='input-field col s12 m6 offset-m4'>
+			<input type="checkbox" id="check" name="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?>>
+			<label for="check">Recordar usuario y contraseña</label>
 		</div>
 	</div>
 	<div class="center">
