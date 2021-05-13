@@ -19,12 +19,12 @@ include("../master/navbar.php");
 <br>
 <div class="container">
 <div class="row">
-<form action="" method="GET">
+<form action="" method="GET" autocomplete='off'>
 <div class='row'>
 <div class='input-field col s12 m11'>
 <i class='material-icons prefix'>event_available</i>
 <input id='id' type='text' name='id' class='validate' required/>
-<label for='id'>Ingresa tu codigo</label>
+<label for='id'>Ingresa tu numero de DUI</label>
 </div>
 </div>
 <div class='row center-align'>
@@ -52,7 +52,7 @@ $result = json_decode($response);
 echo "<table class='table'>";
 echo "<thead>";
 echo "<tr>";
-echo "<th>Tu codigo</th>";
+echo "<th>Numero de reserva</th>";
 echo "<th>Nombres</th>";
 echo "<th>Apellidos</th>";
 echo "<th>DUI</th>";

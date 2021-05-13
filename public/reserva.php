@@ -24,7 +24,7 @@ include("../master/navbar.php");
 <!-- Si ya hay registros entonces los imprimimos en el campo que corresponde -->
 <div class="container">
 <div class="row">
-<form method='post' action="">
+<form method='post' action="" autocomplete='off'>
 <div class='row'>
 <div class='input-field col s12 m6'>
 <i class='material-icons prefix'>person</i>
