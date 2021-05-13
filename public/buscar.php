@@ -24,7 +24,7 @@ include("../master/navbar.php");
 <div class='input-field col s12 m11'>
 <i class='material-icons prefix'>event_available</i>
 <input id='id' type='text' name='id' class='validate' required/>
-<label for='id'>Ingresa tu numero de DUI</label>
+<label for='id'>Ingresa tu numero de reserva</label>
 </div>
 </div>
 <div class='row center-align'>
